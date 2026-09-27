@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #111111;
+  background: #f9f6f0;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top, rgba(212, 175, 55, 0.15), transparent 24%),
+    #f9f6f0;
+  color: #111111;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Cormorant Garamond', serif;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.marquee {
+  position: relative;
+  overflow: hidden;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 26s linear infinite;
+}
+
+.marquee-item {
+  flex-shrink: 0;
+  margin-right: 1.25rem;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  transform: scale(1);
+  transition: transform 0.35s ease, filter 0.35s ease;
+  box-shadow: 0 25px 40px rgba(17, 17, 17, 0.08);
+}
+
+.marquee-item img {
+  display: block;
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.marquee-item:hover img {
+  transform: scale(1.06);
+}
+
+@keyframes marquee-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f9f6f0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(212, 175, 55, 0.8);
+  border-radius: 999px;
+}
