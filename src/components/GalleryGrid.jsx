@@ -39,7 +39,8 @@ export default function GalleryGrid({ images, selectedCategory, onSelectCategory
               <img
                 src={image.src}
                 alt={image.title}
-                className="aspect-[4/5] w-full object-cover object-center transition duration-500 group-hover:scale-105"
+                className="aspect-[4/5] w-full scale-[1.08] object-cover object-center transition duration-500 group-hover:scale-[1.18]"
+                style={{ objectPosition: 'center center' }}
                 loading="lazy"
               />
             </div>

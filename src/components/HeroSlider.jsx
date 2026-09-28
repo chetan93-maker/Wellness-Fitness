@@ -56,12 +56,12 @@ export default function HeroSlider() {
           <img
             src={activeSlide.image}
             alt={activeSlide.title}
-            className="h-full w-full object-cover object-center opacity-70"
+            className="h-full w-full scale-[1.12] object-cover object-center opacity-55 brightness-[0.72] contrast-[1.08]"
           />
         </motion.div>
       </AnimatePresence>
 
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(26,47,37,0.15),rgba(17,17,17,0.85))]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(10,19,16,0.25),rgba(7,10,9,0.78))]" />
 
       <div className="relative z-10 mx-auto flex h-full max-w-7xl items-end px-4 pb-16 pt-32 sm:px-6 lg:px-8">
         <motion.div
@@ -83,7 +83,7 @@ export default function HeroSlider() {
             initial={{ opacity: 0, y: 35 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.45 }}
-            className="max-w-5xl font-display text-4xl leading-[0.95] text-cream sm:text-5xl lg:text-[5rem]"
+            className="max-w-5xl font-display text-4xl leading-[0.95] text-white drop-shadow-[0_4px_18px_rgba(0,0,0,0.45)] sm:text-5xl lg:text-[5rem]"
           >
             {activeSlide.title}
           </motion.h1>

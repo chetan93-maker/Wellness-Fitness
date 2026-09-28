@@ -3,20 +3,61 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { X } from 'lucide-react'
 import GalleryGrid from '../components/GalleryGrid'
 
-import gymInterior from '../assets/images/gym-interior.jpg.jpeg'
-import pilatesStudio from '../assets/images/pilates-studio.jpg.jpeg'
-import archway from '../assets/images/archway.jpg.jpeg'
-
 const galleryItems = [
-  { id: 1, title: 'Arched Lobby', category: 'Interiors', src: archway },
-  { id: 2, title: 'Pilates Studio', category: 'Equipment', src: pilatesStudio },
-  { id: 3, title: 'Recovery Lounge', category: 'Wellness', src: gymInterior },
-  { id: 4, title: 'Strength Zone', category: 'Equipment', src: gymInterior },
-  { id: 5, title: 'Olive Courtyard', category: 'Wellness', src: archway },
-  { id: 6, title: 'Sunlit Entry', category: 'Interiors', src: gymInterior },
-  { id: 7, title: 'Private Lounge', category: 'Interiors', src: pilatesStudio },
-  { id: 8, title: 'Mobility Deck', category: 'Wellness', src: archway },
-  { id: 9, title: 'Reformer Room', category: 'Equipment', src: pilatesStudio },
+  {
+    id: 1,
+    title: 'Arched Lobby',
+    category: 'Interiors',
+    src: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80',
+  },
+  {
+    id: 2,
+    title: 'Strength Arena',
+    category: 'Equipment',
+    src: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1200&q=80',
+  },
+  {
+    id: 3,
+    title: 'Recovery Lounge',
+    category: 'Wellness',
+    src: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=1200&q=80',
+  },
+  {
+    id: 4,
+    title: 'Free Weights',
+    category: 'Equipment',
+    src: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=1200&q=80',
+  },
+  {
+    id: 5,
+    title: 'Glass Atrium',
+    category: 'Interiors',
+    src: 'https://images.unsplash.com/photo-1558611848-73f7eb4001a1?auto=format&fit=crop&w=1200&q=80',
+  },
+  {
+    id: 6,
+    title: 'Yoga Flow',
+    category: 'Wellness',
+    src: 'https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=1200&q=80',
+  },
+  {
+    id: 7,
+    title: 'Cardio Deck',
+    category: 'Equipment',
+    src: 'https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=1200&q=80',
+  },
+  {
+    id: 8,
+    title: 'Lounge Detail',
+    category: 'Interiors',
+    src: 'https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=1200&q=80',
+  },
+  {
+    id: 9,
+    title: 'Reformer Room',
+    category: 'Equipment',
+    src: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1200&q=80',
+  },
 ]
 
 export default function Gallery() {
